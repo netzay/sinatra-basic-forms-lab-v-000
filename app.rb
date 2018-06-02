@@ -11,10 +11,10 @@ class App < Sinatra::Base
     end
 
     post '/' do
-      #binding.pry
-    @name = params[:name]
-    @breed = params[:breed]
-    @age = params[:age]
+      @name = params[:name]
+      @breed = params[:breed]
+      @age = params[:age]
+  
       erb :display_puppy
     end
 end
